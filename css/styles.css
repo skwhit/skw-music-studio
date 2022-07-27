@@ -6,7 +6,7 @@ body {
     width: auto;
     height: 2000px;
     margin: 0;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .hero {
@@ -37,7 +37,7 @@ body {
 
 .box {
     position: relative;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     font-size: 20px;
     font-weight:bolder;
     color:  white;
@@ -69,6 +69,7 @@ body {
 .fixed {
     position: fixed;
     width: 100%;
+    top: 0;
     z-index: 20;
 }
 
@@ -81,13 +82,13 @@ body {
     opacity: 1;
     z-index: 10;
     margin: 0 auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .content {
     height: 300px;
     margin: 0 15%;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .piano, .acoustic-guitar, .drums {
@@ -109,7 +110,7 @@ body {
     float: left;
     height: 100%;
     padding: 0 10px;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .content img {
@@ -192,7 +193,7 @@ li.nav_item:not(#nav_left) {
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .about h1 {
@@ -216,12 +217,11 @@ li.nav_item:not(#nav_left) {
     top: 180px;
     height: 1000px;
     margin: 0 15%;
-    border: 1px dashed white;
     color: black;
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 form { 
@@ -235,6 +235,23 @@ form {
     border-radius: 10px; */
     padding: 10px 0;
     overflow: hidden;
+}
+
+.contact h1 {
+    margin: 0;
+    padding: 5px;
+}
+
+.contact p {
+    margin: 0;
+    padding: 5px;
+}
+
+.line {
+    margin: 0 5%;
+    padding: 0 5px;
+    height: 2px;
+    background-color: black;
 }
 
 label {
@@ -279,6 +296,10 @@ input[type="submit"] {
     border-color: white;
     min-width: 300px;
     border-radius: 10px;
+}
+
+input, select, textarea {
+    border-radius: 5px;
 }
 /* End of contact page */
 
@@ -330,5 +351,11 @@ input[type="submit"] {
         
     }
     
+    .contact {
+        top: 130px;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
 
   }

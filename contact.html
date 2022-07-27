@@ -27,38 +27,39 @@
         </nav>
       </div>
       <div class="contact">
-        <h1>Want to sign up for lessons or book a recording session?</h1>
-        <p>Sign up for lessons below:</p>
+        <h1>Want to sign up for lessons?</h1>
+        <p>Enter your information below:</p>
+        <div class="line"></div>
         <form id="survey-form" action="#">
           <fieldset>
-              <label id="name-label" for="name">Name<input id="name" type="text" name="name" placeholder="first and last name" required></label>
-              <label id="email-label" for="email">Email<input id="email" type="email" name="email" placeholder="valid email address only" required></label>
-              <label id="number-label" for="age">Age<input id="number" type="number" name="age" min="16" max="120" placeholder="16+" required></label>
+              <label id="name-label" for="name">Name<input id="name" type="text" name="name" placeholder="First and last name" required></label>
+              <label id="email-label" for="email">Email<input id="email" type="email" name="email" placeholder="e.g. Denise@gmail.com" required></label>
+              <label id="number-label" for="age">Age<input id="number" type="number" name="age" min="16" max="120" placeholder="Under 18 will need guardian present during first lesson" required></label>
           </fieldset>
           <fieldset>
-              <label for="residence">Which option best describes you place of residence?
+              <label for="residence">How did you hear about us?
               <select name="role" id="dropdown">
-                  <option value="">Select current residence</option>
-                  <option value="1">Dorm</option>
-                  <option value="2">Apartment</option>
-                  <option value="3">House</option>
-                  <option value="4">Prefer not to say</option>
+                  <option value="">Select an option below</option>
+                  <option value="1">Family member</option>
+                  <option value="2">Friend</option>
+                  <option value="3">Social Media</option>
+                  <option value="4">Advertisement</option>
                   <option value="5">Other</option>
               </select> 
               </label>
           </fieldset>
-          <fieldset>Would you recommend this website to a friend?
-              <label value="1" id="rec" for="rec"><input class="inline" type="radio" name="rec">Yes</label>
-              <label value="2" id="rec" for="rec"><input class="inline" type="radio" name="rec">No</label>
-              <label value="3" id="rec" for="rec"><input class="inline" type="radio" name="rec">Maybe</label>
+          <fieldset>How would you describe your musical ability?
+              <label value="1" id="rec" for="rec"><input class="inline" type="radio" name="rec">Beginner</label>
+              <label value="2" id="rec" for="rec"><input class="inline" type="radio" name="rec">Intermediate</label>
+              <label value="3" id="rec" for="rec"><input class="inline" type="radio" name="rec">Advanced</label>
           </fieldset>
-          <fieldset>What about this service would you like to see improved? (check all that apply)
-              <label id="improvements" for="improvements"><input class="inline" value="1" type="checkbox">Customer service</label>
-              <label id="improvements" for="improvements"><input class="inline" value="2" type="checkbox">Delivery Times</label>
-              <label id="improvements" for="improvements"><input class="inline" value="3" type="checkbox">Product Quality</label>
-              <label id="improvements" for="improvements"><input class="inline" value="4" type="checkbox">Web Services</label>
+          <fieldset>Which instrument are you  to learn? (check all that apply)
+              <label id="instrument" for="instrument"><input class="inline" value="1" type="checkbox">Customer service</label>
+              <label id="instrument" for="instrument"><input class="inline" value="2" type="checkbox">Delivery Times</label>
+              <label id="instrument" for="instrument"><input class="inline" value="3" type="checkbox">Product Quality</label>
+              <label id="instrument" for="instrument"><input class="inline" value="4" type="checkbox">Web Services</label>
           </fieldset>
-          <fieldset>Any additional comments or suggestions?
+          <fieldset>Any additional information we should know?s
               <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Enter your comments here..."></textarea>
           </fieldset>
           <input id="submit" type="submit" value="Submit">
