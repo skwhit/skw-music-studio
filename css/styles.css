@@ -323,6 +323,7 @@ input, select, textarea {
 
     .content {
         margin: 0;
+        height: 350px;
     }
 
     .instrument-wrapper {
@@ -341,7 +342,6 @@ input, select, textarea {
     .piano, .acoustic-guitar, .drums {
         border-radius: 0;
         border: 1px solid black;
-        
     }
     .content h2 {
         font-size: large;
