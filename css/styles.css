@@ -126,6 +126,10 @@ body {
     padding: 5px;
 }
 
+.content p {
+    padding: 0 5px;
+}
+
 #footer {
     clear: both;
 }
