@@ -26,28 +26,46 @@
           </ul>
         </nav>
       </div>
-      <section class="box" id="section1">
-        <!-- <iframe
-          id="video1"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/R0JKCYZ8hng"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        >
-        </iframe> -->
-      </section>
-      <div class="content">
-        <div class="sa">
-          <section class="box" id="section">Section</section>
-          <article class="box" id="article">Article</article>
-        </div>
-        <aside class="box" id="aside">Aside</aside>
+      <div class="contact">
+        <h1>Want to sign up for lessons or book a recording session?</h1>
+        <p>Sign up for lessons below:</p>
+        <form id="survey-form" action="#">
+          <fieldset>
+              <label id="name-label" for="name">Name<input id="name" type="text" name="name" placeholder="first and last name" required></label>
+              <label id="email-label" for="email">Email<input id="email" type="email" name="email" placeholder="valid email address only" required></label>
+              <label id="number-label" for="age">Age<input id="number" type="number" name="age" min="16" max="120" placeholder="16+" required></label>
+          </fieldset>
+          <fieldset>
+              <label for="residence">Which option best describes you place of residence?
+              <select name="role" id="dropdown">
+                  <option value="">Select current residence</option>
+                  <option value="1">Dorm</option>
+                  <option value="2">Apartment</option>
+                  <option value="3">House</option>
+                  <option value="4">Prefer not to say</option>
+                  <option value="5">Other</option>
+              </select> 
+              </label>
+          </fieldset>
+          <fieldset>Would you recommend this website to a friend?
+              <label value="1" id="rec" for="rec"><input class="inline" type="radio" name="rec">Yes</label>
+              <label value="2" id="rec" for="rec"><input class="inline" type="radio" name="rec">No</label>
+              <label value="3" id="rec" for="rec"><input class="inline" type="radio" name="rec">Maybe</label>
+          </fieldset>
+          <fieldset>What about this service would you like to see improved? (check all that apply)
+              <label id="improvements" for="improvements"><input class="inline" value="1" type="checkbox">Customer service</label>
+              <label id="improvements" for="improvements"><input class="inline" value="2" type="checkbox">Delivery Times</label>
+              <label id="improvements" for="improvements"><input class="inline" value="3" type="checkbox">Product Quality</label>
+              <label id="improvements" for="improvements"><input class="inline" value="4" type="checkbox">Web Services</label>
+          </fieldset>
+          <fieldset>Any additional comments or suggestions?
+              <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Enter your comments here..."></textarea>
+          </fieldset>
+          <input id="submit" type="submit" value="Submit">
+      </form>
       </div>
 
-      <footer class="box" id="footer">Footer</footer>
+      <!-- <footer class="box" id="footer">Footer</footer> -->
     </div>
   </body>
 </html>

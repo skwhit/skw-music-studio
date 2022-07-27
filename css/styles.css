@@ -4,7 +4,7 @@
 
 body {
     width: auto;
-    height: auto;
+    height: 2000px;
     margin: 0;
     border: 1px dashed white;
 }
@@ -181,6 +181,109 @@ li.nav_item:not(#nav_left) {
     padding-top: 130px;
 }
 
+/* Start of about page */
+.about {
+    position: relative;
+    top: 180px;
+    height: 500px;
+    margin: 0 15%;
+    border: 1px dashed white;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px dashed black;
+}
+
+.about h1 {
+    padding: 5px;
+    margin: 0;
+}
+
+#founder {
+    width: 250px;
+    height: 250px;
+}
+
+.about p {
+    padding: 0 5px;
+}
+/* end of about page */
+
+/* Start of contact page */
+.contact {
+    position: relative;
+    top: 180px;
+    height: 1000px;
+    margin: 0 15%;
+    border: 1px dashed white;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px dashed black;
+}
+
+form { 
+    position: relative;
+    width: 100%;
+    min-width: 100px;
+    max-width: 800px;
+    align-content: center;
+    margin: 0 auto;
+    /* background-color: rgba(131, 46, 46, .6);
+    border-radius: 10px; */
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+label {
+    display:block;
+    margin: 4px 0;
+}
+
+input, textarea, select {
+    background-color: rgb(31, 29, 29);
+    width: 100%;
+    color: white;
+    min-height: 2em;
+    margin: 10px 0;
+    border-color: black;
+}
+
+::placeholder {
+    color: white;
+}
+
+#dropdown {
+    color: white;
+}
+
+.inline { 
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+fieldset {
+    padding: 10px 50px;
+    border: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-color: white;
+    min-width: 300px;
+    border-radius: 10px;
+}
+/* End of contact page */
+
+
+
 @media only screen and (max-width: 900px) {
     .content {
         margin: 0;
@@ -217,6 +320,14 @@ li.nav_item:not(#nav_left) {
     }
     .content h2 {
         font-size: large;
+    }
+
+    .about {
+        top: 130px;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        
     }
     
 
