@@ -4,7 +4,7 @@
 
 body {
     width: auto;
-    height: 2000px;
+    height: auto;
     margin: 0;
     border: 1px dashed white;
 }
@@ -59,10 +59,10 @@ body {
 #navbar, #footer {
     width:auto;
     height:100px;
+    background-color: rgb(207, 202, 202);
 }
 
 #navbar {
-    background-color: rgb(207, 202, 202);
     width: 100%;
 }
 
@@ -74,25 +74,21 @@ body {
 }
 
 #video1 {
-    /* padding: 10px 0; */
-    /* clear: both; */
-    /* position: relative;
-    align-items: center;
-    margin: 0 auto; */
-    max-width: 712;
-    min-width: 100;
-    z-index: 10;
-    /* margin: 0 auto; */
-    border: 1px solid white;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
 }
 
 #section1 {
     position: relative;
-    max-width: 712px;
-    margin: auto;
+    max-width: 700px;
+    max-height: 400px;
+    margin: 0 auto;
+    padding-bottom: 400px;
     top: 180px;
-    clear: both;
-    border: 1px solid white;
 }
 
 .content {
@@ -101,7 +97,7 @@ body {
     max-width: 800px;
     top: 230px;
     height: 300px;
-    margin: auto;
+    margin: 0 auto 50px;
     border: 1px dashed white;
 }
 
@@ -145,7 +141,7 @@ body {
 }
 
 #footer {
-    background-color: ;
+   
     clear: both;
     position: relative;
     height: 300px;
@@ -230,7 +226,6 @@ li.nav_item:not(#nav_left) {
 
 .about p {
     padding: 0 8%;
-    margin: 
 }
 /* end of about page */
 
@@ -241,7 +236,7 @@ li.nav_item:not(#nav_left) {
     width: 100%;
     min-width: 100px;
     max-width: 800px;
-    height: 1000px;
+    height: 900px;
     margin: 0 auto;
     color: black;
     text-align: center;
@@ -319,7 +314,7 @@ input[type="submit"] {
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    border-color: white;
+    border: white;
     min-width: 300px;
     border-radius: 10px;
 }
@@ -328,6 +323,13 @@ input, select, textarea {
     border-radius: 5px;
 }
 /* End of contact page */
+
+@media only screen and (max-width: 718px) {
+    #section1 {
+        padding-bottom: 56.25%; 
+    }
+
+}
 
 @media only screen and (max-width: 610px) {
 
@@ -346,9 +348,9 @@ input, select, textarea {
     }
 
     #video1 {
-        padding: 0;
+        /* padding: 0;
         position: relative;
-        width: 100%;
+        width: 100%; */
         }
 
     .piano, .acoustic-guitar, .drums {
@@ -357,6 +359,15 @@ input, select, textarea {
     }
     .content h2 {
         font-size: large;
+    }
+
+    #section1 {
+        top: 130px;
+        padding-bottom: 56.25%;
+    }
+
+    .content {
+        top: 130px;
     }
 
     .about {
@@ -372,6 +383,10 @@ input, select, textarea {
         padding: 0;
         margin: 0;
         border-radius: 0;
+    }
+    
+    #footer {
+        top: 130px;
     }
 
   }
