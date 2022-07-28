@@ -6,7 +6,7 @@ body {
     width: auto;
     height: 2000px;
     margin: 0;
-    /* border: 1px dashed white; */
+    border: 1px dashed white;
 }
 
 .hero {
@@ -37,7 +37,7 @@ body {
 
 .box {
     position: relative;
-    /* border: 1px dashed white; */
+    border: 1px dashed white;
     font-size: 20px;
     font-weight:bolder;
     color:  white;
@@ -74,28 +74,42 @@ body {
 }
 
 #video1 {
-    padding: 10px 0;
-    clear: both;
-    display: flex;
-    justify-content: center;
+    /* padding: 10px 0; */
+    /* clear: both; */
+    /* position: relative;
     align-items: center;
-    opacity: 1;
+    margin: 0 auto; */
+    max-width: 712;
+    min-width: 100;
     z-index: 10;
-    margin: 0 auto;
-    /* border: 1px solid white; */
+    /* margin: 0 auto; */
+    border: 1px solid white;
+}
+
+#section1 {
+    position: relative;
+    max-width: 712px;
+    margin: auto;
+    top: 180px;
+    clear: both;
+    border: 1px solid white;
 }
 
 .content {
+    position: relative;
+    min-width: 100px;
+    max-width: 800px;
+    top: 230px;
     height: 300px;
-    margin: 0 15%;
-    /* border: 1px dashed white; */
+    margin: auto;
+    border: 1px dashed white;
 }
 
 .piano, .acoustic-guitar, .drums {
     height: 100%;
     max-width: 600px;
     min-width: 100px;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
     color: black;
     text-align: center;
     background-color: white;
@@ -106,11 +120,11 @@ body {
     display: flex;
     justify-content: center;
     width: calc(100%*1/3);
-    min-width: 200px;
+    /* min-width: 200px; */
     float: left;
     height: 100%;
-    padding: 0 10px;
-    /* border: 1px dashed white; */
+    padding: 0 1%;
+    border: 1px dashed white;
 }
 
 .content img {
@@ -131,12 +145,15 @@ body {
 }
 
 #footer {
+    background-color: ;
     clear: both;
+    position: relative;
+    height: 300px;
+    top: 280px;
 }
 
 .nav_item {
     display: inline-block;
-    margin: 0 50px 0 0;
     text-decoration: none;
 }
 
@@ -144,7 +161,7 @@ li.nav_item:not(#nav_left) {
     border-radius: 10px;
     background-color: black;
     padding: 5px 10px;
-    
+    margin: 0 5px 0 50px;
 }
 .nav_item a {
     text-decoration: none;
@@ -159,8 +176,11 @@ li.nav_item:not(#nav_left) {
 .nav {
     height: 100%;
     padding: 0;
-    margin: 0;
-    
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    min-width: 100px;
+    max-width: 1200px;
 }
 
 #logo {
@@ -181,28 +201,26 @@ li.nav_item:not(#nav_left) {
     padding: auto;
 }
 
-#section1 {
-    clear: both;
-    padding-top: 130px;
-}
-
 /* Start of about page */
 .about {
     position: relative;
+    min-width: 100px;
+    max-width: 550px;
     top: 180px;
-    height: 500px;
-    margin: 0 15%;
+    height: 510px;
+    margin: 0 auto ;
     border: 1px dashed white;
     color: black;
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 }
 
 .about h1 {
-    padding: 5px;
+    padding: 10px;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 #founder {
@@ -211,21 +229,25 @@ li.nav_item:not(#nav_left) {
 }
 
 .about p {
-    padding: 0 5px;
+    padding: 0 8%;
+    margin: 
 }
 /* end of about page */
 
 /* Start of contact page */
 .contact {
-    position: relative;
     top: 180px;
+    position: relative;
+    width: 100%;
+    min-width: 100px;
+    max-width: 800px;
     height: 1000px;
-    margin: 0 15%;
+    margin: 0 auto;
     color: black;
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 }
 
 form { 
@@ -307,18 +329,10 @@ input, select, textarea {
 }
 /* End of contact page */
 
-
-
-@media only screen and (max-width: 900px) {
-    .content {
-        margin: 0;
-    }
-}
-
 @media only screen and (max-width: 610px) {
-    .nav_item {
-      margin: 0 10px 0 0;
-      padding: 0;
+
+    li.nav_item:not(#nav_left) {
+        margin: 0 5px 0 10px;
     }
 
     .content {
@@ -334,10 +348,8 @@ input, select, textarea {
     #video1 {
         padding: 0;
         position: relative;
-        -webkit-user-select: none;
-        user-select: none;
         width: 100%;
-    }
+        }
 
     .piano, .acoustic-guitar, .drums {
         border-radius: 0;
