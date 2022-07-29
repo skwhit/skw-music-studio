@@ -38,7 +38,7 @@ body {
 
 .box {
     position: relative;
-    /* border: 1px dashed white; */
+    border: 1px dashed white;
     font-size: 20px;
     font-weight:bolder;
     color:  white;
@@ -152,18 +152,29 @@ body {
 
 /* dont use inline block, causes spacing between boxes */
 #footer div {
-    margin: 0;
-    padding: 2% 3%;
-    /* border: 2px solid black; */
     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* padding: 3%; */
+    /* border: 2px solid black; */
     width: calc(100%/3);
     height: 100%;
     color: black;
 }
 
+#footer-item div {
+    display: block;
+    width: 270px;
+    max-width: 270px;
+    min-width: 100px;
+    padding: 0 5%;
+}
+
 #footer h3 {
     margin: 0;
-    padding-bottom: 10px;
+    padding: 0 0 10px 0;
 }
 
 #footer p {
@@ -186,23 +197,21 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: inline-block;
-}
+    width: 100%}
 #subscribe li {
     display: inline-block;
     margin: 5px 10px 0 0;
 }
 
 #copyright {
-    clear: both;
-    float: right;
-    padding-top: 160px
+   text-align: right;
+   margin-top: 180px;
 }
 
 #map {
     position: relative;
-    max-width: 250px;
-    max-height: 200px;
+    max-width: 240px;
+    max-height: 180px;
     margin: 0 auto;
 }
 
@@ -416,6 +425,14 @@ input, select, textarea {
     }
     .content h2 {
         font-size: large;
+    }
+
+    #footer h3 {
+        font-size: large;
+    }
+
+    #footer li {
+        margin-right: 2px;
     }
 
     #section1 {
