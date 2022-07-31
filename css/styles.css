@@ -38,7 +38,7 @@ body {
 
 .box {
     position: relative;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     font-size: 20px;
     font-weight:bolder;
     color:  white;
@@ -390,11 +390,14 @@ input, select, textarea {
 }
 /* End of contact page */
 
-@media only screen and (max-width: 718px) {
+@media only screen and (max-width: 800px) {
     #section1 {
         padding-bottom: 56.25%; 
     }
-
+    #map {
+        height: 100px;
+        width: 130px;
+    }
 }
 
 @media only screen and (max-width: 610px) {
@@ -429,6 +432,10 @@ input, select, textarea {
 
     #footer h3 {
         font-size: large;
+    }
+
+    #footer p {
+        font-size: 14px;
     }
 
     #footer li {
