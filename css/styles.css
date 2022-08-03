@@ -169,7 +169,7 @@ body {
     width: 270px;
     max-width: 270px;
     min-width: 100px;
-    padding: 0 5%;
+    padding: 3% 5% 0;
 }
 
 #footer h3 {
@@ -302,7 +302,7 @@ li.nav_item:not(#nav_left) {
     width: 100%;
     min-width: 100px;
     max-width: 800px;
-    height: 935px;
+    height: 950px;
     margin: 0 auto;
     color: black;
     text-align: center;
@@ -439,7 +439,7 @@ input, select, textarea {
     }
 
     #footer li {
-        margin-right: 2px;
+        margin-right: 1px;
     }
 
     #section1 {
@@ -456,18 +456,24 @@ input, select, textarea {
         padding: 0;
         margin: 0;
         border-radius: 0;
+        height: 540px;
         
     }
     
     .contact {
         top: 130px;
-        padding: 0;
+        padding: 0 0 30px 0;
         margin: 0;
         border-radius: 0;
+        height: 970px;
     }
     
     #footer {
         top: 130px;
+        height: 200px;
     }
 
+    #copyright {
+        margin-top: 80px;
+    }
   }
