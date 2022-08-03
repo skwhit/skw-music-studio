@@ -408,7 +408,7 @@ input, select, textarea {
 
     .content {
         margin: 0;
-        height: 350px;
+        height: 300px;
     }
 
     .instrument-wrapper {
@@ -425,9 +425,10 @@ input, select, textarea {
     .piano, .acoustic-guitar, .drums {
         border-radius: 0;
         border: 1px solid black;
+        font-size: small;
     }
     .content h2 {
-        font-size: large;
+        font-size: medium;
     }
 
     #footer h3 {
@@ -454,7 +455,7 @@ input, select, textarea {
     .about {
         top: 130px;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         border-radius: 0;
         height: 540px;
         
@@ -474,6 +475,6 @@ input, select, textarea {
     }
 
     #copyright {
-        margin-top: 80px;
+        margin-top: 70px;
     }
   }
